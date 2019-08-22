@@ -17,3 +17,4 @@
 窗体结构是QMainWindow->CentralWidget->Widget->verticalLayout
 透明是在Widget->verticalLayout之间
 解决：改成和安全管理等其他类一样的
+下次要细心啊！！！
