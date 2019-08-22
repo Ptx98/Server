@@ -8,3 +8,12 @@
 
 2.把新的html在安全管理中打开，没有问题，所以问题应该出在工程概况的C++代码
 工程概况比安全管理多的是webchanel，删掉之后并没有解决问题
+
+
+
+!!!!!
+我终于找到问题在哪了
+工程概况的ui父类是QMainWindow
+窗体结构是QMainWindow->CentralWidget->Widget->verticalLayout
+透明是在Widget->verticalLayout之间
+解决：改成和安全管理等其他类一样的
